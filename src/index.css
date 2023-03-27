@@ -1,13 +1,135 @@
-body {
+/* Imports */
+@import url('https://fonts.googleapis.com.css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+/* Navigation Bar */
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #24252A;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252A;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  font-family: "Lato", "sans-serif";
+  max-height: 80px;
+
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: rgb(139, 172, 180);
+}
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgb(139, 172, 180);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  color: rgb(139, 172, 180);
+  background-color: white;
+}
+
+/* Home Page Styles */
+.home {
+  text-align:left;
+  color: #edf0f1;
+  margin-top: 250px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 5em;  
+}
+
+.home p {
+    font-family: "Lato", "sans-serif";
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.home h1 {
+  font-size: 60px;
+  font-family: "Archivo Black", "sans-serif";
+}
+
+/* Error Page Styles */
+.error-page {
+  color: #edf0f1;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.error-page h2 {
+  font-family: "Archivo Black", "sans-serif";
+  font-size: 70px;
+}
+
+.error-page  {
+  font-family: "Lato", "sans-serif";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Projects Page Style*/
+.projects .project-title {
+  color: #edf0f1;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 60px;
+  font-family: "Archivo Black", "sans-serif";
+}
+
+.project {
+  display: inline-block;
+  border: 1px solid #ccc;
+    width: 300px;
+    height: 300px;
+    border: black;
+  margin: 50px 50px;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
